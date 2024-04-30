@@ -1,0 +1,87 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos do cabeçalho */
+  header {
+    background-color: white;
+    color: black;
+    padding: 10px 0;
+    border-radius: 20px; 
+    height: 30px; 
+  }
+  
+  /* Alinhamento do texto da navegação */
+  nav {
+    text-align: right; /* Alinha o texto da navegação à direita */
+    margin-top: -55px; /* Sobe a navegação em relação ao topo do cabeçalho */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline; /* Mantenha os links em linha */
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 30px; /* Centraliza verticalmente */
+  }
+  
+  /* Estilos do banner */
+  #banner {
+    background-image: url('banner-background.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .banner-content {
+    max-width: 600px;
+    margin: 0 auto; 
+  }
+  
+  /* Estilos do rodapé */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Estilos para seções */
+  section {
+    padding: 50px 0;
+  }
+  
+  /* Estilos para logo */
+   
+   .logo img {
+    height: 50px;
+    margin-right: 10px;
+   }
+   
+   .logo span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+   }
+  

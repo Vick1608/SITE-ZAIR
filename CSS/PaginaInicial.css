@@ -1,0 +1,261 @@
+body {
+    background-image: url('');
+    /* Caminho para a imagem de fundo */
+    background-size: cover;
+    /* Para cobrir toda a página com a imagem */
+    background-repeat: no-repeat;
+    /* Para evitar a repetição da imagem */
+  }
+  
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+  }
+  
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    color: white;
+  }
+  
+  /* Estilos para os ícones de rede social */
+  .social-icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    /* Define o layout como flexível */
+    align-items: flex-start;
+    /* Alinha os ícones ao topo */
+    justify-content: flex-end;
+    /* Alinha os ícones à direita */
+    position: absolute;
+    /* Define a posição absoluta */
+    top: -5px;
+    /* Distância da borda superior */
+    right: 20px;
+    /* Distância da borda direita */
+  }
+  
+  .social-icons li {
+    margin-right: 10px;
+    /* Espaçamento entre os ícones */
+  }
+  
+  .social-icons li:last-child {
+    margin-right: 0;
+    /* Remove o espaçamento do último ícone */
+  }
+  
+  .social-icons li img {
+    width: 40px;
+    /* Largura dos ícones */
+    height: auto;
+    /* Altura automática para manter a proporção */
+  }
+  
+  .dados-icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    /* Define o layout como flexível */
+    align-items: flex-start;
+    /* Alinha os ícones ao topo */
+    justify-content: flex-start;
+    /* Alinha os ícones à esquerda */
+    position: absolute;
+    /* Define a posição absoluta */
+    top: -5px;
+    /* Distância da borda superior */
+    left: 20px;
+    /* Distância da borda esquerda */
+  }
+  
+  .dados-icons li {
+    margin-right: 10px;
+    /* Espaçamento entre os ícones */
+    display: flex;
+    /* Configura os itens para usar flexbox */
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+  }
+  
+  .dados-icons li:last-child {
+    margin-right: 0;
+    /* Remove o espaçamento do último ícone */
+  }
+  
+  .dados-icons li img {
+    width: 40px;
+    /* Largura dos ícones */
+    height: auto;
+    /* Altura automática para manter a proporção */
+  }
+  
+  .logo img {
+    width: 40px;
+    /* Defina a largura desejada */
+    height: auto;
+    /* Mantenha a proporção */
+  
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: black;
+    /* Cor do texto */
+    border-radius: 5px;
+    height: 30px;
+    background-color: aquamarine;
+    overflow: hidden;
+    /* Para limpar os floats */
+  }
+  
+  .contaneir {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+    /* Cor do texto */
+    border-radius: 10px;
+    height: 30px;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Cor de fundo preto com 50% de transparência */
+    margin: 0 auto;
+    /* Centraliza o conteúdo horizontalmente */
+    max-width: 100%;
+    /* Define a largura máxima do contêiner */
+  }
+  
+  .contaneir a:hover {
+    color: pink;
+    /* Cor do texto ao passar o mouse */
+  }
+  
+  /* Alinhamento do texto da navegação */
+  nav {
+    text-align: right;
+    /* Alinha o texto da navegação à direita */
+    margin-top: -5px;
+    /* Sobe a navegação em relação ao topo do cabeçalho */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    /* Mantenha os links em linha */
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 30px;
+    /* Centraliza verticalmente */
+  }
+  
+  /* Estilos do rodapé */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 20px;
+  }
+  
+  /* Estilos para seções */
+  section {
+    padding: 50px 0;
+  }
+  
+  #banner {
+    background-color: rgba(146, 60, 132, 0.7); /* Cor do banner com 50% de transparência */
+    background-image: url("../IMG/Zaira\ Jossane\ \(1\).png"); /* Imagem de fundo do banner */
+    background-size: cover;
+    background-position: center;
+    height: 500px; 
+    border-radius: 20px;
+    position: relative;
+  }
+  
+
+  
+  /* Estilos para telas menores */
+  @media (max-width: 768px) {
+    .contaneir {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav {
+      text-align: center;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .container-artigos {
+      width: 100%;
+      padding: 0 10px;
+    }
+  
+    .artigo {
+      width: calc(50% - 20px);
+    }
+  
+    .equipe .membro {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  .logo-centralizado {
+    width: 800px; /* Defina a largura desejada para a logo */
+    height: auto; /* Mantém a proporção da altura automaticamente */
+    position: absolute;
+    top: -5px; /* Ajuste conforme necessário para posicionar a imagem no topo */
+    left: 50%; /* Centraliza a imagem horizontalmente */
+    transform: translateX(-50%); /* Centraliza a imagem horizontalmente */
+    z-index: 1; /* Garante que a logo fique sobreposta ao fundo do banner */
+  }
+  
+  .quadrado {
+    background-color: rgba(66, 1, 1, 0.8); /* Cor do fundo com 80% de opacidade */
+    width: 200px; /* Largura do quadrado */
+    height: 100px; /* Altura do quadrado */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    position: absolute; /* Posição absoluta para posicionar sobre a logo */
+    top: 440px; /* Ajuste conforme necessário para posicionar abaixo da logo */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    border-radius: 10px; /* Arredonda os cantos do quadrado */
+    color: white; 
+  }
+  
+  .quadrado p {
+    margin: 0; /* Remove margem padrão do parágrafo */
+    line-height: 100px; /* Centraliza verticalmente */
+  }
+  
