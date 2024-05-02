@@ -1,158 +1,205 @@
+/*Parte Inicial*/
+
 body {
-    background-color: #091A39;
-  }
-  
-  .tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    border-radius: 30px;
-  }
-
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    color: white;
-  }
-
-  /* Estilos para os ícones de rede social */
-  .social-icons {
-    list-style-type: none;
-    padding: 0;
-    display: flex; /* Define o layout como flexível */
-    align-items: flex-start; /* Alinha os ícones ao topo */
-    justify-content: flex-end; /* Alinha os ícones à direita */
-    position: absolute; /* Define a posição absoluta */
-    top: -5px; /* Distância da borda superior */
-    right: 20px; /* Distância da borda direita */
-  }
-
-  .social-icons li {
-    margin-right: 10px; /* Espaçamento entre os ícones */
-  }
-
-  .social-icons li:last-child {
-    margin-right: 0; /* Remove o espaçamento do último ícone */
-  }
-
-  .social-icons li img {
-    width: 40px; /* Largura dos ícones */
-    height: auto; /* Altura automática para manter a proporção */
-  }
-
-  .dados-icons {
-    list-style-type: none;
-    padding: 0;
-    display: flex; /* Define o layout como flexível */
-    align-items: flex-start; /* Alinha os ícones ao topo */
-    justify-content: flex-start; /* Alinha os ícones à esquerda */
-    position: absolute; /* Define a posição absoluta */
-    top: -5px; /* Distância da borda superior */
-    left: 20px; /* Distância da borda esquerda */
-  }
-
-  .dados-icons li {
-    margin-right: 10px; /* Espaçamento entre os ícones */
-    display: flex; /* Configura os itens para usar flexbox */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-  }
-
-  .dados-icons li:last-child {
-    margin-right: 0; /* Remove o espaçamento do último ícone */
-  }
-
-  .dados-icons li img {
-    width: 40px; /* Largura dos ícones */
-    height: auto; /* Altura automática para manter a proporção */
-  }
-
-
-  .logo img {
-    width: 40px; /* Defina a largura desejada */
-    height: auto; /* Mantenha a proporção */
-  }
-
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: white; /* Cor de fundo do cabeçalho */
-    color: black; /* Cor do texto */
-    border-radius: 30px;
-    height: 30px;
-  }
-
-  /* Imagem da Logo */
-  .title-image {
-    text-align: center; /* Centraliza horizontalmente */
-    position: relative; /* Permite posicionamento absoluto da imagem */
-  }
-  
-  .title-image img {
-    position: absolute; /* Posiciona a imagem absolutamente em relação ao container */
-    top: -50px; /* Ajusta a posição vertical da imagem conforme necessário */
-    left: 50%; /* Ajusta a posição horizontal da imagem */
-    transform: translateX(-50%); /* Centraliza horizontalmente */
-    width: 200px; /* Define a largura da imagem */
-    height: 200px; /* Define a altura da imagem */
-    margin-top: 70px;
-  }
-
-/* Estilos para o formulário */
-form {
-    max-width: 40%;
-    /* Largura máxima do formulário */
-    margin: 20px auto;
-    /* Centraliza o formulário na página */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Sombra suave */
+  background-color: #272623;
+  /* Caminho para a imagem de fundo */
+  background-size: cover;
+  /* Para cobrir toda a página com a imagem */
+  background-repeat: no-repeat;
+  /* Para evitar a repetição da imagem */
 }
 
-/* Estilos para os campos de entrada e textarea */
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  border-radius: 30px;
 }
 
-h1 {
-    text-align: center;
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  color: white;
 }
 
-/* Estilo para os placeholders */
-input[type="text"]::placeholder,
-input[type="email"]::placeholder,
-input[type="tel"]::placeholder,
-textarea::placeholder {
-    color: #aaa;
+/* Estilos para os ícones de rede social */
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  /* Define o layout como flexível */
+  align-items: flex-start;
+  /* Alinha os ícones ao topo */
+  justify-content: flex-end;
+  /* Alinha os ícones à direita */
+  position: absolute;
+  /* Define a posição absoluta */
+  top: -5px;
+  /* Distância da borda superior */
+  right: 20px;
+  /* Distância da borda direita */
 }
 
-/* Estilos para o botão de envio */
-button[type="submit"] {
-    background-color: #007bff; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-    margin-top: 5px;
-    text-align: center;
-  }
-
-button[type="submit"]:hover {
-    background-color: #0056b3;
-    text-align: center;
+.social-icons li {
+  margin-right: 10px;
+  /* Espaçamento entre os ícones */
 }
+
+.social-icons li:last-child {
+  margin-right: 0;
+  /* Remove o espaçamento do último ícone */
+}
+
+.social-icons li img {
+  width: 40px;
+  /* Largura dos ícones */
+  height: auto;
+  /* Altura automática para manter a proporção */
+}
+
+.dados-icons {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  /* Define o layout como flexível */
+  align-items: flex-start;
+  /* Alinha os ícones ao topo */
+  justify-content: flex-start;
+  /* Alinha os ícones à esquerda */
+  position: absolute;
+  /* Define a posição absoluta */
+  top: -5px;
+  /* Distância da borda superior */
+  left: 20px;
+  /* Distância da borda esquerda */
+}
+
+.dados-icons li {
+  margin-right: 10px;
+  /* Espaçamento entre os ícones */
+  display: flex;
+  /* Configura os itens para usar flexbox */
+  align-items: center;
+  /* Alinha os itens verticalmente ao centro */
+}
+
+.dados-icons li:last-child {
+  margin-right: 0;
+  /* Remove o espaçamento do último ícone */
+}
+
+.dados-icons li img {
+  width: 40px;
+  /* Largura dos ícones */
+  height: auto;
+  /* Altura automática para manter a proporção */
+}
+
+.logo img {
+  width: 40px;
+  /* Defina a largura desejada */
+  height: auto;
+  /* Mantenha a proporção */
+
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: white;
+  /* Cor do texto */
+  border-radius: 5px;
+  height: 30px;
+  background-color: #272623;
+  overflow: hidden;
+  /* Para limpar os floats */
+}
+
+.contaneir {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: white;
+  /* Cor do texto */
+  border-radius: 10px;
+  height: 30px;
+  background-color: black;
+  background-color: #272623;
+  /* Cor de fundo preto com 50% de transparência */
+  margin: 0 auto;
+  /* Centraliza o conteúdo horizontalmente */
+  max-width: 100%;
+  /* Define a largura máxima do contêiner */
+}
+
+.contaneir a:hover {
+  color: pink;
+  /* Cor do texto ao passar o mouse */
+}
+
+#banner {
+  background-color: rgba(255, 192, 203, 0.7);
+  /* Cor do banner com 50% de transparência */
+  background-image: url("https://www.casadaqualidade.com.br/wp-content/uploads/2018/11/fachada-1.png");
+  /* Imagem de fundo do banner */
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+  border-radius: 0px;
+  position: relative;
+
+}
+
+/* Alinhamento do texto da navegação */
+nav {
+  text-align: right;
+  /* Alinha o texto da navegação à direita */
+  margin-top: -5px;
+  /* Sobe a navegação em relação ao topo do cabeçalho */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  /* Mantenha os links em linha */
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 30px;
+  /* Centraliza verticalmente */
+}
+
+/*Parte Inicial*/
+
+/* Imagens */ 
+
+.image-container {
+  display: flex;
+  border: 2px solid black; /* Contorno preto de 2px */
+  margin-top: 50px;
+}
+
+.image-container img {
+  height: 300px;
+  width: 444px;
+  margin: 0 0px; /* Margem entre as imagens */
+  border-radius: 0px; /* Bordas arredondadas */
+  border: 2px solid black; 
+}
+
+/* Imagens */  

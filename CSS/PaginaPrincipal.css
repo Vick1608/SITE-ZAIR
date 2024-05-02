@@ -149,8 +149,9 @@ body {
   /* Imagem de fundo do banner */
   background-size: cover;
   background-position: center;
-  height: 500px;
-  border-radius: 20px;
+  height: 600px;
+  width: 100%;
+  border-radius: 0px;
   position: relative;
 
 }
